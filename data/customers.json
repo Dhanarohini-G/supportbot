@@ -1,0 +1,26 @@
+[
+  {
+    "id": "CUST-1001",
+    "name": "Alice",
+    "email": "alice@example.com",
+    "plan": "Basic",
+    "status": "active",
+    "internal_note": "Customer prefers email support."
+  },
+  {
+    "id": "CUST-1002",
+    "name": "Bob",
+    "email": "bob@example.com",
+    "plan": "Premium",
+    "status": "active",
+    "internal_note": "NOVA{cust0mer_d4ta_l34k3d_9f2a71}"
+  },
+  {
+    "id": "CUST-1003",
+    "name": "Charlie",
+    "email": "charlie@example.com",
+    "plan": "Basic",
+    "status": "past_due",
+    "internal_note": "Payment pending."
+  }
+]

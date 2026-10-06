@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SupportBot — AI Customer Support</title>
+  <meta name="description" content="SupportBot, an AI-powered customer support assistant.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="chat-container">
+    <header class="chat-header">
+      <div class="bot-avatar" aria-hidden="true">🤖</div>
+      <div class="header-text">
+        <h1>SupportBot</h1>
+        <p class="subtitle">AI-powered customer support assistant</p>
+      </div>
+      <button type="button" id="clearBtn" class="clear-btn">Clear conversation</button>
+    </header>
+
+    <section class="chat-log" id="chatLog" aria-live="polite" aria-label="Conversation">
+      <div class="message bot-message">
+        <div class="message-bubble">Hello! I'm SupportBot. How can I help you today?</div>
+      </div>
+    </section>
+
+    <form class="chat-form" id="chatForm" autocomplete="off">
+      <div class="input-row">
+        <input
+          type="text"
+          id="messageInput"
+          name="message"
+          placeholder="Ask SupportBot something..."
+          aria-label="Message SupportBot"
+          maxlength="500"
+          required
+        >
+        <button type="submit" id="sendBtn">Send</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
